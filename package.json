@@ -1,0 +1,17 @@
+{
+  "name": "student-management-system",
+  "version": "1.0.0",
+  "description": "Full Stack Student Management System",
+  "main": "server/server.js",
+  "scripts": {
+    "init-db": "npm run init-db --prefix server",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dev:all": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
